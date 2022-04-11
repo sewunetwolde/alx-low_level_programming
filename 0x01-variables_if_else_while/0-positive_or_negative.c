@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- *         
+ *    
  * Return: Always 0 (Success/correct)
  */
 
@@ -29,9 +29,10 @@ else
 {
 printf("%i is positive\n", n);
 }
-		
-return(0);
+
+return (0);
 
 }
+
 
 
