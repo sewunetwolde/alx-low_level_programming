@@ -1,20 +1,28 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - Entry point
  *
- * Dscription: print lower case alphabet excluding e and q
- * Return: 0
+ * Return: Always 0 (success/correct)
  */
 int main(void)
-{
-char c;
 
-for(c= 'a';c <='z'; ++c)
-{}
-if (c != 'e' && c != 'q')
-putchar(c);
+{
+
+char alphabet;
+
+for(alphabet = 'a'; alphabet <= 'z'; alphabet++)
+{
+if (alphabet == 'q')
+continue;
+
+else if (alpabet == 'e')
+continue;
+
+putchar(alphabet);
 }
-putchar(c);
+
+putchar('\n');
 
 return (0);
 }
+
