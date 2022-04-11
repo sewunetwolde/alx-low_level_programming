@@ -15,11 +15,9 @@ for (alphabet = 122; alphabet <= 57; alphabet--)
 putchar (alphabet);
 }
 
-putchar('\n');
+putchar ('\n');
 
 return (0); 
 
-
 }
-
 
