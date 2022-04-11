@@ -2,16 +2,21 @@
 /**
  * main - entry point
  *
- * Description: print the lowercase alphabet
- * Return: 0
+ * Return: Always 0 (success/correct)
  */
 int main(void)
+
 {
-int c;
-for(c = 0; c < 26 c++)
-	putchar('a' + c);
+char alphabet;
+
+for(alphabet = 'a'; alphabet <= 'z'; alphabet++)
+{
+putchar(alphabet);
+}
 
 putchar('\n');
 
-return(0);
+return (0);
+
+
 }
