@@ -4,18 +4,22 @@
  *
  * Return: Always 0 (success/correct)
  */
+
 int main(void)
 
 {
-int i;
+char alphabet;
 
-for (i = 48; i <= 57; i++)
+for (alphabet = 122; alphabet <= 57; alphabet--)
 {
-putchar (i);
+putchar (alphabet);
 }
 
 putchar('\n');
+
 return (0); 
 
+
 }
+
 
