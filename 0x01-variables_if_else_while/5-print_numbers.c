@@ -3,17 +3,20 @@
 /**
 * main - entry point
 *
-* Dscription: print number 0 to 9 on one line
-* Return: 0.
+* Return: Always 0 (success/correct)
 */
 int main(void)
+
 {
-char i;
+int digit;
 
-for (i = '0'; i<= '9'; ++i)
-putchar(i);
+for (digit = '0'; digit < '10'; digit++)
+{
+printf("%ddigit", digit);
+}
 
-putchar('\n');
+printf("\n");
 
 return (0);
 }
+
