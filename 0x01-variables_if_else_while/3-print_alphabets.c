@@ -5,12 +5,13 @@
  * Return: Always 0 (sucess/correct)
  */
 int main(void)
-
 {
+
 char lower_case;
 char upper_case;
 
-for (upper_case = 'A'; upper_case <= 'Z'; upper_case++{
+for (upper_case = 'A'; upper_case <= 'Z'; upper_case++)
+{
 putchar(upper_case);
 }
 
