@@ -7,9 +7,7 @@
  */
 int main(void)
 {
-	long int number;
-
-	number = 612852475143;
+	long int number = 612852475143;
 
 	if (isPrime(number) == 1)
 	{
