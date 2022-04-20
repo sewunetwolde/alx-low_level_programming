@@ -1,25 +1,31 @@
 #include "main.h"
-
 /**
-  * print_number - Prints any integer with putchar
-  * @n: Number to prints
-  *
-  * Return: Nothing
-  */
-void print_number(int n)
+ * rot13 - encodes a string using rot13
+ * @str: the string to encode
+ *
+ * Return: encode string
+ */
+char *rot13(char *str)
 {
-	unsigned int x;
+	int i, j;
 
-	if (n < 0)
+	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		_putchar('-');
-		n *= -1;
+		j = 0;
+		while (alpha[j] != '\0')
+		{
+			if (str[i] == alpha[j])
+			{
+				str[i] = rot[j];
+				break;
+			}
+			j++;
+		}
+		i++;
 	}
-
-	x = n;
-
-	if (x / 10)
-		print_number(x / 10);
-
-	_putchar(x % 10 + '0');
+	return (str);
 }
